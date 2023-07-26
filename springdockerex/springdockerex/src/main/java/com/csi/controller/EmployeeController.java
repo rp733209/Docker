@@ -7,9 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class EmployeeController  {
+public class EmployeeController {
     @GetMapping("/abc")
-    public ResponseEntity<String> sayHello(){
+    public ResponseEntity<String> sayHello() {
         return ResponseEntity.ok("Welcome TO");
+
+
+}
+
+    @GetMapping("/welcome")
+    public ResponseEntity<String> welcome() {
+        return ResponseEntity.ok("Welcome To Fintech Csi Pune");
     }
 }
+
